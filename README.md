@@ -43,16 +43,7 @@ angle = alpha * (angle + gyro * dt) + (1 - alpha) * angle_acc
 **Known limitation:** yaw cannot be corrected with an accelerometer, because gravity does not change when rotating about the vertical axis. This filter gives pitch and roll only. For the air-mouse, yaw motion would use gyro rate directly.
 
 
-![Raw vs filtered angle](analysis/plots/roll_comparison.png)
 
-## Filter comparison
-
-| Filter | Noise | Drift | Compute cost | Notes |
-|---|---|---|---|---|
-| Accelerometer only | [__] | none | lowest | noisy, affected by motion |
-| Gyro only | low | [__] | low | drifts |
-| Complementary | [__] | [__] | low | simple, tunable with one parameter |
-| Madgwick / Kalman | [__] | [__] | higher | [__] |
 
 **Conclusion:** [Write 2-3 lines in your own words on why the complementary filter is enough for an air-mouse.]
 
