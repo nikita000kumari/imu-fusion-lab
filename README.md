@@ -97,15 +97,6 @@ g++ -std=c++17 src/main.cpp -o fusion
 pip install numpy pandas matplotlib
 python analysis/plot.py
 ```
-
-## Next steps
-
-- [ ] Port filter to ESP32 and read a real MPU6050 over I2C
-- [ ] Add dead zone and sensitivity scaling for cursor mapping
-- [ ] Send mouse movement over BLE HID
-- [ ] Add unit tests and CI
-- [ ] Measure latency and battery life on hardware
-
 ## Skills used
 
 C++, Python, sensor calibration, sensor fusion, signal analysis, data visualization
