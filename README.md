@@ -42,25 +42,6 @@ angle = alpha * (angle + gyro * dt) + (1 - alpha) * angle_acc
 
 **Known limitation:** yaw cannot be corrected with an accelerometer, because gravity does not change when rotating about the vertical axis. This filter gives pitch and roll only. For the air-mouse, yaw motion would use gyro rate directly.
 
-## Results
-
-*(Fill in with your own measured values. Delete this note.)*
-
-| Metric | Value |
-|---|---|
-| Accel angle noise (std dev at rest) | [__] deg |
-| Gyro-only drift | [__] deg/min |
-| Filter noise at rest (alpha = 0.98) | [__] deg |
-
-Effect of alpha:
-
-| alpha | Observation |
-|---|---|
-| 0.90 | [__] |
-| 0.96 | [__] |
-| 0.99 | [__] |
-
-Plots (add images to `analysis/plots/`):
 
 ![Raw vs filtered angle](analysis/plots/roll_comparison.png)
 
